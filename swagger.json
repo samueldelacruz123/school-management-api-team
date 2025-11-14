@@ -1,11 +1,11 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Students API",
-    "description": "A simple API to manage students in a MongoDB database",
+    "title": "Student-Teacher API",
+    "description": "A simple API to manage students and teachers in a MongoDB database",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-project2-93m5.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
