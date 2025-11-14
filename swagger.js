@@ -6,7 +6,7 @@ const doc = {
         description: 'A simple API to manage students and teachers in a MongoDB database',
     },
     host: 'cse341-project2-93m5.onrender.com',
-    schemes: ['https'],
+    schemes: ['https', 'http'],
 };
 
 const outputFile = './swagger.json';
