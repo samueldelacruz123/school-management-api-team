@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const teacherController = require('../controllers/teacherController');
 const validation = require('../middleware/validate');
+const { isAuthenticated } = require('../middleware/authenticate');
 
 // #swagger.tags = ['Teachers']
 // #swagger.summary = 'Get all teachers'
@@ -31,7 +32,7 @@ router.get('/:id', teacherController.getSingleTeacher);
 //         courses: ['math101', 'math201']
 //     }
 // }
-router.post('/', validation.saveTeacher, teacherController.createTeacher);
+router.post('/', isAuthenticated, validation.saveTeacher, teacherController.createTeacher);
 
 // #swagger.tags = ['Teachers']
 // #swagger.summary = 'Update a teacher by ID'
@@ -51,12 +52,12 @@ router.post('/', validation.saveTeacher, teacherController.createTeacher);
 //         courses: ['math101', 'math201']
 //     }
 // }
-router.put('/:id', validation.saveTeacher, teacherController.updateTeacher);
+router.put('/:id', isAuthenticated, validation.saveTeacher, teacherController.updateTeacher);
 
 // #swagger.tags = ['Teachers']
 // #swagger.summary = 'Delete a teacher'
 // #swagger.description = 'Deletes a teacher record based on ID'
 // #swagger.parameters['id'] = { description: 'Teacher ID' }
-router.delete('/:id', teacherController.deleteTeacher);
+router.delete('/:id', isAuthenticated, teacherController.deleteTeacher);
 
 module.exports = router;
