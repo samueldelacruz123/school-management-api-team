@@ -2,8 +2,8 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
-        title: 'Students and Teachers API',
-        description: 'A simple API to manage students and teachers in a MongoDB database',
+        title: 'School Management API',
+        description: 'A simple school management API application',
     },
     host: 'cse341-project2-93m5.onrender.com',
     schemes: ['https', 'http'],

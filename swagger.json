@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Students and Teachers API",
-    "description": "A simple API to manage students and teachers in a MongoDB database",
+    "title": "School Management API",
+    "description": "A simple school management API application",
     "version": "1.0.0"
   },
   "host": "cse341-project2-93m5.onrender.com",
@@ -33,6 +33,16 @@
       }
     },
     "/logout": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api-docs": {
       "get": {
         "description": "",
         "responses": {
@@ -421,16 +431,6 @@
           },
           "500": {
             "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
           }
         }
       }
