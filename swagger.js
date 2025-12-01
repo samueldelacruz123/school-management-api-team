@@ -5,7 +5,7 @@ const doc = {
         title: 'School Management API',
         description: 'A simple school management API application',
     },
-    host: 'cse341-project2-93m5.onrender.com',
+    host: 'https://school-management-api-team.onrender.com',
     schemes: ['https', 'http'],
 };
 

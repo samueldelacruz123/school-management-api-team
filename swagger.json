@@ -5,7 +5,7 @@
     "description": "A simple school management API application",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-93m5.onrender.com",
+  "host": "https://school-management-api-team.onrender.com",
   "basePath": "/",
   "schemes": [
     "https",
