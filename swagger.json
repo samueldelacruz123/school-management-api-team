@@ -42,22 +42,12 @@
         }
       }
     },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/students/": {
       "get": {
         "tags": [
           "Students"
         ],
-        "description": "",
+        "description": "Get all students.",
         "produces": [
           "application/json"
         ],
@@ -74,7 +64,7 @@
         "tags": [
           "Students"
         ],
-        "description": "",
+        "description": "Create a new student.",
         "parameters": [
           {
             "name": "body",
@@ -134,7 +124,7 @@
         "tags": [
           "Students"
         ],
-        "description": "",
+        "description": "Get a student by ID.",
         "produces": [
           "application/json"
         ],
@@ -165,7 +155,7 @@
         "tags": [
           "Students"
         ],
-        "description": "",
+        "description": "Update a student by ID.",
         "parameters": [
           {
             "name": "id",
@@ -232,7 +222,7 @@
         "tags": [
           "Students"
         ],
-        "description": "",
+        "description": "Delete a student by ID.",
         "parameters": [
           {
             "name": "id",
@@ -262,7 +252,7 @@
         "tags": [
           "Teachers"
         ],
-        "description": "",
+        "description": "Get all teachers.",
         "responses": {
           "200": {
             "description": "OK"
@@ -276,7 +266,7 @@
         "tags": [
           "Teachers"
         ],
-        "description": "",
+        "description": "Create a new teacher.",
         "parameters": [
           {
             "name": "body",
@@ -330,7 +320,7 @@
         "tags": [
           "Teachers"
         ],
-        "description": "",
+        "description": "Get a teacher by ID.",
         "parameters": [
           {
             "name": "id",
@@ -355,7 +345,7 @@
         "tags": [
           "Teachers"
         ],
-        "description": "",
+        "description": "Update a teacher by ID.",
         "parameters": [
           {
             "name": "id",
@@ -413,7 +403,7 @@
         "tags": [
           "Teachers"
         ],
-        "description": "",
+        "description": "Delete a teacher by ID.",
         "parameters": [
           {
             "name": "id",
